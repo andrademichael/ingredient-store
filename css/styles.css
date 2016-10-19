@@ -1,0 +1,26 @@
+#conversion {
+  margin: auto;
+  color: white;
+  background-repeat: no-repeat;
+  background-color: maroon;
+  background-size: cover;
+  padding: 30px;
+  width: 800px;}
+
+body {
+  color: black;
+  background-color: maroon;
+  background-image: url("../img/background1.jpg");
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  color: black;
+}
+
+button {
+  background-color: black;
+}

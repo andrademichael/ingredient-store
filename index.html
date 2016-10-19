@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ingredient-store</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ingredient Unit Converter</h1>
+      <br>
+      <form id="conversion">
+        <div class="form-group">
+          <label for="unit">Quantity</label>
+          <input id="unit" class="form" type="text">
+        </div>
+        <select class="form-control" id="unitType">
+          <option value="1">F to C</option>
+          <option value="2">C to F</option>
+          <option value="3">Oz to Lbs</option>
+          <option value="4">Lbs to Oz</option>
+          <option value="5">cups to ml</option>
+          <option value="6">ml to cups</option>
+          <option value="7">cups to tbsp</option>
+          <option value="8">tbsp to cups</option>
+          <option value="9">tbsp to tsp</option>
+          <option value="10">tsp to tbsp</option>
+        </select>
+        <br>
+        <button type="submit" class="btn">Convert!</button>
+      </form>
+      <h1 class="output"></h1>
+    </div>
+  </body>
+</html>

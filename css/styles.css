@@ -7,6 +7,16 @@
   padding: 30px;
   width: 800px;}
 
+#items {
+  margin: auto;
+  color: white;
+  background-repeat: no-repeat;
+  background-color: darkblue;
+  background-size: cover;
+  padding: 30px;
+  width: 800px;
+}
+
 body {
   color: black;
   background-color: maroon;
@@ -19,6 +29,10 @@ h1 {
 
 .form {
   color: black;
+}
+
+.form-control {
+  width: auto;
 }
 
 button {

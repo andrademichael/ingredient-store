@@ -9,29 +9,68 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ingredient Unit Converter</h1>
-      <br>
-      <form id="conversion">
-        <div class="form-group">
-          <label for="unit">Quantity</label>
-          <input id="unit" class="form" type="text">
-        </div>
-        <select class="form-control" id="unitType">
-          <option value="1">F to C</option>
-          <option value="2">C to F</option>
-          <option value="3">Oz to Lbs</option>
-          <option value="4">Lbs to Oz</option>
-          <option value="5">cups to ml</option>
-          <option value="6">ml to cups</option>
-          <option value="7">cups to tbsp</option>
-          <option value="8">tbsp to cups</option>
-          <option value="9">tbsp to tsp</option>
-          <option value="10">tsp to tbsp</option>
-        </select>
+
+      <div class="row">
+        <h1>ShoppingCart</h1>
         <br>
-        <button type="submit" class="btn">Convert!</button>
-      </form>
-      <h1 class="output"></h1>
+        <form id="items">
+          <select class="form-control" id="itemType">
+            <option value="1">Chocolat</option>
+            <option value="2">Cinnamon</option>
+            <option value="3">Sugar</option>
+            <option value="4">Flour</option>
+            <option value="5">Butter</option>
+          </select>
+          <br>
+          <div class="form-group">
+            <label for="itemQty">Needed Quantity</label>
+            <input id="itemQty" class="form" type="text">
+          </div>
+          <br>
+          <button type="submit" class="btn">Add to cart!</button>
+        </form>
+      </div>
+
+      <div class="row">
+        <ul id="shoppingCart"></ul>
+        <h3>Final Receipt</h3>
+        <div class="col-md-4">
+          <ul id="itemTypeDisplay"></ul>
+        </div>
+        <div class="col-md-4">
+          <ul id="itemQtyDisplay"></ul>
+        </div>
+        <div class="col-md-4">
+          <ul id="itemCostDisplay"></ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1>Ingredient Unit Converter</h1>
+        <br>
+        <form id="conversion">
+          <div class="form-group">
+            <label for="unit">Quantity</label>
+            <input id="unit" class="form" type="text">
+          </div>
+          <select class="form-control" id="unitType">
+            <option value="1">F to C</option>
+            <option value="2">C to F</option>
+            <option value="3">Oz to Lbs</option>
+            <option value="4">Lbs to Oz</option>
+            <option value="5">cups to ml</option>
+            <option value="6">ml to cups</option>
+            <option value="7">cups to tbsp</option>
+            <option value="8">tbsp to cups</option>
+            <option value="9">tbsp to tsp</option>
+            <option value="10">tsp to tbsp</option>
+          </select>
+          <br>
+          <button type="submit" class="btn">Convert!</button>
+        </form>
+        <h1 class="output"></h1>
+      </div>
+
     </div>
   </body>
 </html>

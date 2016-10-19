@@ -1,5 +1,30 @@
 
-// Backend
+// Backend logic
+
+var testVar = "Test"
+
+var cartCalc = function(quantity, type) {
+  if (type === chocolat)  {
+      var chocolatCost = function(quantity) {
+      var totalCost = quantity * 50;
+  } else if () {
+    var cinnamonCost = function(quantity) {
+      var totalCost = quantity * 20;
+  } else if () {
+    var sugarCost = function(quantity) {
+      var totalCost = quantity * 10;
+    });
+  } else if () {
+    var flourCost = function(quantity) {
+      var totalCost = quantity * 30;
+    };
+  } else if () {
+    var butterCost = function(quantity) {
+      var totalCost = quantity * 40;
+    };
+
+    return quantity, type, totalCost;
+};
 
 var fToC = function(quantity) {
   return (quantity-32) * (5/9);
@@ -40,6 +65,11 @@ var tbspToTsp = function(quantity) {
 var tspToTbsp = function(quantity) {
   return quantity / 3;
 };
+
+var itemSelection = function(itemQty, unitType) {
+  return totalCost
+}
+
 var selection = function(quantity, type) {
   if (type === 1) {
     return fToC(quantity);
@@ -67,16 +97,21 @@ var selection = function(quantity, type) {
 // Front-End
 
 $(function(){
+  $("form#items").submit(function() {
+    event.preventDefault();
+    var itemType = $("#itemType").val();
+    var itemQuantity = parseInt($("#itemQty").val());
+
+    var shoppingCost = itemSelection(itemType, itemQuantity);
+    $("#shoppingCart").append(shoppingCost);
+
   $("form#conversion").submit(function() {
     event.preventDefault();
     var quantity = $("input#unit").val();
-    console.log(quantity)
     var type = parseInt($("#unitType").val());
-    console.log(type)
 
     var result = selection(quantity, type)
     $(".output").text(result);
     $("#conversion").show();
-
   });
 });
